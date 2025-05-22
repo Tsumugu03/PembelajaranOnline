@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; 
+    color: #333333; 
+}
+
+.konten-utama {
+    max-width: 900px; 
+    margin: 25px auto; 
+    padding: 25px;
+    background-color: #ffffff; 
+    border: 1px solid #dddddd;
+}
+
+
+.hero-section {
+    background-color: #fff5e6; 
+    padding: 25px 20px; 
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 2.3em;
+    color: #8B4513; 
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
+}
+
+.hero-section h2 {
+    font-size: 1.5em;
+    color: #A0522D; 
+    font-weight: normal;
+    margin-bottom: 1.2em;
+}
+.hero-section p.hero-tagline { 
+    font-size: 1.1em;
+    color: #5F4C3F; 
+    margin-bottom: 1.5em;
+}
+
+.tombol-jelajah {
+    display: inline-block;
+    background-color: #DAA520;
+    color: white;
+    padding: 12px 25px; 
+    text-decoration: none;
+    border: 1px solid #B8860B; 
+   
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tombol-jelajah:hover {
+    background-color: #c7951e; 
+}
+
+
+h1 { font-size: 2em; text-align: center; color: #444444; margin-top: 1em; margin-bottom: 0.8em;}
+.konten-utama h2, .konten-utama h3 { 
+    color: #444444;
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+}
+.konten-utama h2 { font-size: 1.6em; }
+.konten-utama h3 { font-size: 1.3em; }
+
+
+.konten-utama p {
+    margin-bottom: 1em;
+    text-align: left; 
+}
+.konten-utama p.centered-text, .konten-utama h2.centered-text {
+    text-align: center; 
+}
+
+
+
+img {
+    max-width: 100%; 
+    height: auto;
+    display: block; 
+    margin: 20px auto; 
+    border: 1px solid #eeeeee; 
+}
+
+
+.konten-utama ul, .konten-utama ol {
+    margin-left: 25px; 
+    padding-left: 10px; 
+    margin-bottom: 1em;
+}
+.konten-utama li {
+    margin-bottom: 0.6em; 
+}
+
+
+nav {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #efefef; 
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+nav a {
+    text-decoration: none;
+    color: #0056b3; 
+    padding: 8px 12px;
+    margin: 0 3px; 
+    font-size: 0.95em;
+    
+}
+nav a:hover,
+nav a.aktif { 
+    text-decoration: none; 
+    color: #003d80; 
+    background-color: #e0e0e0; 
+}
+
+
+footer {
+    text-align: center;
+    padding: 25px 20px; 
+    font-size: 0.9em;
+    color: #555555;
+    margin-top: 25px; 
+    border-top: 1px solid #dddddd; 
+}
+
+
+.lokasi-item {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px dashed #cccccc;
+    text-align: center;
+}
+.lokasi-item:last-child { 
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.lokasi-item h3 {
+    text-align: center;
+    margin-top: 0.5em; 
+}
+.lokasi-item p {
+    text-align: center;
+    font-size: 0.95em; 
+}
+
+
+.galeri-container {
+    text-align: center;
+}
+.galeri-foto-item { 
+    display: inline-block;
+    width: 230px;
+    vertical-align: top;
+    margin: 10px;
+    padding: 5px; 
+    
+}
+.galeri-container img {
+    width: 220px;
+    height: 160px; 
+    object-fit: cover;
+    margin: 0 auto 8px auto; 
+    border: 1px solid #cccccc; 
+}
+.galeri-caption {
+    font-size: 0.85em;
+    color: #555555;
+    text-align: center;
+    padding: 0 5px; 
+}
