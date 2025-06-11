@@ -1,10 +1,81 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Galeri Foto Lumpia Semarang - Kelezatan Khas Kota Atlas</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .konten-utama {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #4A90E2;
+        }
+        p.centered-text {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4A90E2;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #D0021B;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .gallery-item {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: left;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        .gallery-item img {
+            width: 100%;
+            display: block;
+        }
+        .caption {
+            padding: 10px 12px;
+            font-weight: 600;
+            font-size: 1rem;
+            color: #374151;
+        }
+        .caption-desc {
+            font-weight: normal;
+            font-size: 0.9rem;
+            color: #6b7280;
+            margin-top: 4px;
+        }
+    </style>
 </head>
 <body>
 
@@ -12,15 +83,42 @@
         <h1>Galeri Kenikmatan Lumpia Semarang</h1>
         <p class="centered-text">Lihat berbagai foto lumpia Semarang yang menggugah selera, mulai dari proses pembuatan hingga sajian akhir.</p>
         
-     
-    <nav>
-        <a href="index.html">Beranda</a>
-        <a href="sejarah.html">Sejarah</a>
-        <a href="resep.html">Resep</a>
-        <a href="lokasi.html">Lokasi</a>
-        <a href="galeri.html" class="aktif">Galeri</a>
-    </nav>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="sejarah.html">Sejarah</a>
+            <a href="resep.html">Resep</a>
+            <a href="lokasi.html">Lokasi</a>
+            <a href="galeri.html" class="aktif">Galeri</a>
+        </nav>
 
+        <div class="gallery">
+            <div class="gallery-item" tabindex="0">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/647f850b-7a1e-437b-98ec-3864f469abe3.png" alt="Proses pembuatan lumpia Semarang dengan tepung dan isian segar di meja dapur tradisional" />
+                <div class="caption">Proses Pembuatan Lumpia</div>
+                <div class="caption-desc">Menggulung lumpia secara tradisional dengan bahan-bahan segar berkualitas.</div>
+            </div>
+            <div class="gallery-item" tabindex="0">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1ac62324-aafe-44c8-99c1-933d73b99f70.png" alt="Lumpia Semarang yang digoreng dengan kulit renyah warna keemasan di atas piring putih" />
+                <div class="caption">Lumpia Digoreng</div>
+                <div class="caption-desc">Lumpia dengan kulit renyah berwarna keemasan yang menggoda selera.</div>
+            </div>
+            <div class="gallery-item" tabindex="0">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/607a41ec-93fc-4256-a44e-2cfbbf851835.png" alt="Sajian lumpia Semarang siap santap dengan saus kacang dan hiasan daun bawang di atas piring keramik" />
+                <div class="caption">Sajian Akhir Lumpia</div>
+                <div class="caption-desc">Lumpia siap disantap dengan pelengkap saus kacang khas Semarang.</div>
+            </div>
+            <div class="gallery-item" tabindex="0">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/90364711-a864-4f0e-a5fa-57453cede4df.png" alt="Tumpukan lumpia Semarang kriuk renyah tersusun di dalam keranjang bambu" />
+                <div class="caption">Lumpia Kriuk</div>
+                <div class="caption-desc">Lumpia kriuk yang renyah dengan tekstur khas yang menggugah selera.</div>
+            </div>
+            <div class="gallery-item" tabindex="0">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/80a54dcc-097d-46fa-9131-c18c8c2207d2.png" alt="Isian mie untuk lumpia Semarang disajikan dalam mangkuk dengan peralatan dapur tradisional" />
+                <div class="caption">Isian Mie Lumpia</div>
+                <div class="caption-desc">Isian mie yang menjadi ciri khas lumpia Semarang dengan cita rasa otentik.</div>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
