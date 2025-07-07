@@ -1,29 +1,109 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lumpia Semarang: Kelezatan Khas Kota Atlas - Beranda</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lumpia Semarang: Kelezatan Khas Kota Atlas - Beranda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8f0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .hero-section {
+      background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://th.bing.com/th/id/OIP.uvEpI6qgSgeV3QshMDiFbgHaE8?cb=iwp2&rs=1&pid=ImgDetMain') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero-section h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero-section h2 {
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    .hero-tagline {
+      font-size: 18px;
+      font-style: italic;
+    }
+
+    .konten-utama {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .konten-utama img {
+      margin-top: 20px;
+      border-radius: 8px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .centered-text {
+      margin-bottom: 16px;
+    }
+
+    a.tombol-jelajah {
+      display: inline-block;
+      margin: 30px auto;
+      padding: 12px 24px;
+      background-color: #e67e22;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    a.tombol-jelajah:hover {
+      background-color: #d35400;
+    }
+
+    @media (max-width: 600px) {
+      .hero-section h1 {
+        font-size: 32px;
+      }
+
+      .hero-section h2 {
+        font-size: 18px;
+      }
+
+      .konten-utama {
+        margin: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <div class="hero-section">
-        <h1>Lumpia Semarang</h1>
-        <h2>Kelezatan Otentik Jantung Jawa Tengah</h2>
-        <p class="hero-tagline">Nikmati perpaduan rasa legendaris yang telah memikat lidah lintas generasi.</p>
-        <img src="https://th.bing.com/th/id/OIP.uvEpI6qgSgeV3QshMDiFbgHaE8?cb=iwp2&rs=1&pid=ImgDetMain" style="max-width:400px;">
-       
-    </div>
+  <div class="hero-section">
+    <h1>Lumpia Semarang</h1>
+    <h2>Kelezatan Otentik Jantung Jawa Tengah</h2>
+    <p class="hero-tagline">Nikmati perpaduan rasa legendaris yang telah memikat lidah lintas generasi.</p>
+  </div>
 
-    <div class="konten-utama">
-        <h2 class="centered-text">Selamat Datang di Dunia Lumpia Semarang</h2>
-        <p class="centered-text">Website ini didedikasikan untuk Anda para pecinta kuliner khas Semarang. Temukan sejarah uniknya, coba resep otentiknya untuk dibuat di rumah, ketahui tempat-tempat legendaris untuk mencicipinya, dan lihat galeri foto yang menggugah selera. Mari kita mulai petualangan rasa ini!</p>
-        <img src="https://cdn.idntimes.com/content-images/post/20190730/66293492-154358995742370-5252344360479875498-n-c359e03dc52cda30cc0a50f44f47cf14_600x400.jpg" style="max-width:300px;">
-    </div>
-
+  <div class="konten-utama">
+    <h2 class="centered-text">Selamat Datang di Dunia Lumpia Semarang</h2>
+    <p class="centered-text">Website ini didedikasikan untuk Anda para pecinta kuliner khas Semarang. Temukan sejarah uniknya, coba resep otentiknya untuk dibuat di rumah, ketahui tempat-tempat legendaris untuk mencicipinya, dan lihat galeri foto yang menggugah selera. Mari kita mulai petualangan rasa ini!</p>
+    <img src="https://cdn.idntimes.com/content-images/post/20190730/66293492-154358995742370-5252344360479875498-n-c359e03dc52cda30cc0a50f44f47cf14_600x400.jpg" alt="Lumpia Semarang">
     <p><a href="sejarah.html" class="tombol-jelajah">Jelajahi Lebih Lanjut</a></p>
-
+  </div>
 
 </body>
 </html>

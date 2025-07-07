@@ -1,29 +1,103 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sejarah Lumpia Semarang - Kelezatan Khas Kota Atlas</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sejarah Lumpia Semarang - Kelezatan Khas Kota Atlas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8f0;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    .konten-utama {
+      max-width: 800px;
+      margin: 60px auto 40px auto;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .konten-utama h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 32px;
+      color: #d35400;
+    }
+
+    .konten-utama img {
+      display: block;
+      margin: 30px auto 0 auto;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    nav {
+      background-color: #e67e22;
+      padding: 12px 0;
+      text-align: center;
+      position: sticky;
+      bottom: 0;
+      width: 100%;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 18px;
+      display: inline-block;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #d35400;
+    }
+
+    nav a.aktif {
+      background-color: #b03e00;
+      border-radius: 6px;
+    }
+
+    @media (max-width: 600px) {
+      .konten-utama {
+        margin: 20px;
+        padding: 20px;
+      }
+
+      nav a {
+        padding: 10px 12px;
+        font-size: 14px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <div class="konten-utama">
-        <h1>Menelusuri Jejak Sejarah Lumpia Semarang</h1>
-        <p>Lumpia Semarang memiliki akar sejarah yang kaya, mencerminkan perpaduan budaya Tionghoa dan Jawa yang harmonis. Kisahnya dimulai pada abad ke-19 di kota Semarang, yang saat itu merupakan pelabuhan dagang yang ramai.</p>
-        <p>Seorang perantau Tionghoa bernama <strong>Tjoa Thay Joe</strong> datang ke Semarang dan menjual makanan sejenis lumpia dengan cita rasa khas Tionghoa. Ia kemudian bertemu dan menikah dengan seorang wanita Jawa asli bernama <strong>Wasih</strong>, yang juga berjualan makanan dengan rasa manis dan gurih khas Jawa.</p>
-        <p>Dari perpaduan keahlian dan cinta mereka, terciptalah resep lumpia baru yang memadukan elemen terbaik dari kedua tradisi kuliner tersebut. Isian rebung yang menjadi ciri khas lumpia Semarang mulai digunakan, menggantikan beberapa bahan asli dari Tiongkok yang mungkin sulit ditemukan atau disesuaikan dengan selera lokal. Rasa lumpia ini menjadi unik, tidak sepenuhnya Tionghoa, juga tidak murni Jawa, melainkan sebuah kreasi baru yang lezat.</p>
-        <p>Usaha lumpia mereka kemudian diteruskan oleh anak-cucu dan kerabat, menyebar dan menjadi ikon kuliner Semarang. Beberapa penjual lumpia legendaris di Semarang saat ini masih memiliki kaitan atau mewarisi resep dari generasi awal tersebut. Lumpia Semarang bukan hanya sekadar makanan, tetapi juga simbol akulturasi budaya yang hidup dan terus dinikmati hingga kini.</p>
-        <img src="https://cdn0-production-images-kly.akamaized.net/9tkvUq8AVGmm2YGh_W0S6ZWcaa8=/71x63:953x560/680x383/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2383426/original/008620400_1539580557-lumpia_ganesh2013.jpg" style="max-width:350px;">
-    </div>
+  <div class="konten-utama">
+    <h1>Menelusuri Jejak Sejarah Lumpia Semarang</h1>
+    <p>Lumpia Semarang memiliki akar sejarah yang kaya, mencerminkan perpaduan budaya Tionghoa dan Jawa yang harmonis. Kisahnya dimulai pada abad ke-19 di kota Semarang, yang saat itu merupakan pelabuhan dagang yang ramai.</p>
+    <p>Seorang perantau Tionghoa bernama <strong>Tjoa Thay Joe</strong> datang ke Semarang dan menjual makanan sejenis lumpia dengan cita rasa khas Tionghoa. Ia kemudian bertemu dan menikah dengan seorang wanita Jawa asli bernama <strong>Wasih</strong>, yang juga berjualan makanan dengan rasa manis dan gurih khas Jawa.</p>
+    <p>Dari perpaduan keahlian dan cinta mereka, terciptalah resep lumpia baru yang memadukan elemen terbaik dari kedua tradisi kuliner tersebut. Isian rebung yang menjadi ciri khas lumpia Semarang mulai digunakan, menggantikan beberapa bahan asli dari Tiongkok yang mungkin sulit ditemukan atau disesuaikan dengan selera lokal.</p>
+    <p>Usaha lumpia mereka kemudian diteruskan oleh anak-cucu dan kerabat, menyebar dan menjadi ikon kuliner Semarang. Lumpia Semarang bukan hanya sekadar makanan, tetapi juga simbol akulturasi budaya yang hidup dan terus dinikmati hingga kini.</p>
+    <img src="https://cdn0-production-images-kly.akamaized.net/9tkvUq8AVGmm2YGh_W0S6ZWcaa8=/71x63:953x560/680x383/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2383426/original/008620400_1539580557-lumpia_ganesh2013.jpg" alt="Lumpia Legendaris Semarang">
+  </div>
 
-    <nav>
-        <a href="index.html">Beranda</a>
-        <a href="sejarah.html" class="aktif">Sejarah</a>
-        <a href="resep.html">Resep</a>
-        <a href="lokasi.html">Lokasi</a>
-        <a href="galeri.html">Galeri</a>
-    </nav>
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="sejarah.html" class="aktif">Sejarah</a>
+    <a href="resep.html">Resep</a>
+    <a href="lokasi.html">Lokasi</a>
+    <a href="galeri.html">Galeri</a>
+  </nav>
 
 </body>
 </html>
