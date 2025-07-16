@@ -1,42 +1,136 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lokasi Lumpia Enak di Semarang - Kelezatan Khas Kota Atlas</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lokasi Lumpia Enak di Semarang - Kelezatan Khas Kota Atlas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8f0;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    .konten-utama {
+      max-width: 800px;
+      margin: 60px auto 40px auto;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .konten-utama h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 32px;
+      color: #d35400;
+    }
+
+    .lokasi-item {
+      margin-bottom: 40px;
+    }
+
+    .lokasi-item img {
+      display: block;
+      margin: 0 auto 15px auto;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 8px;
+    }
+
+    .lokasi-item h3 {
+      color: #e67e22;
+      margin-bottom: 8px;
+    }
+
+    .map-link {
+      display: inline-block;
+      margin-top: 6px;
+      color: #2980b9;
+      text-decoration: none;
+    }
+
+    .map-link:hover {
+      text-decoration: underline;
+    }
+
+    nav {
+      background-color: #e67e22;
+      padding: 12px 0;
+      text-align: center;
+      position: sticky;
+      bottom: 0;
+      width: 100%;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 18px;
+      display: inline-block;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #d35400;
+    }
+
+    nav a.aktif {
+      background-color: #b03e00;
+      border-radius: 6px;
+    }
+
+    @media (max-width: 600px) {
+      .konten-utama {
+        margin: 20px;
+        padding: 20px;
+      }
+
+      nav a {
+        padding: 10px 12px;
+        font-size: 14px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <div class="konten-utama">
-        <h1>Rekomendasi Tempat Menikmati Lumpia Terbaik di Semarang</h1>
-        
-        <div class="lokasi-item">
-            <img src="https://asset.kompas.com/crops/NJ2SZsCT2XA_qHUqM-ksIt_z5eE=/0x0:0x0/750x500/data/photo/2022/09/09/631b186871610.jpg" style="max-width:300px;">
-            <h3>Lumpia Gang Lombok</h3>
-            <p>Alamat: Jl. Gang Lombok No. 11, Purwodinatan, Semarang Tengah.</p>
-            <p>Keistimewaan: Sangat legendaris, rasa otentik terjaga. Selalu ramai.</p>
-            <a href="https://maps.app.goo.gl/4RovqxVWMSX21wNw8" class="map-link" target="_blank"> Lihat di Google Maps</a>
-        </div>
-        
-        <div class="lokasi-item">
-            <img src="https://file.fin.co.id/uploads/f/f88c3b854e48c5957fa32db01eff3662.jpg" style="max-width:300px;">
-            <h3>Lumpia Mbak Lien</h3>
-            <p>Alamat: Jl. Pemuda, Gg. Grajen No.1, Pandansari, Semarang Tengah.</p>
-            <p>Keistimewaan: Ukuran besar, isian padat, tempat nyaman.</p>
-            <a href="https://maps.app.goo.gl/pef7Ekh6NepYU2SZ6" class="map-link" target="_blank"> Lihat di Google Maps</a>
-        </div>
-        
-        <p style="text-align: center; margin-top: 20px; font-style: italic; font-size:0.9em;">Catatan: Jam buka dapat berubah. Cek info terbaru sebelum berkunjung.</p>
+  <div class="konten-utama">
+    <h1>Rekomendasi Tempat Menikmati Lumpia Terbaik di Semarang</h1>
+    
+    <div class="lokasi-item">
+      <img src="https://asset.kompas.com/crops/NJ2SZsCT2XA_qHUqM-ksIt_z5eE=/0x0:0x0/750x500/data/photo/2022/09/09/631b186871610.jpg" alt="Lumpia Gang Lombok">
+      <h3>Lumpia Gang Lombok</h3>
+      <p>Alamat: Jl. Gang Lombok No. 11, Purwodinatan, Semarang Tengah.</p>
+      <p>Keistimewaan: Sangat legendaris, rasa otentik terjaga. Selalu ramai.</p>
+      <a href="https://maps.app.goo.gl/4RovqxVWMSX21wNw8" class="map-link" target="_blank">Lihat di Google Maps</a>
     </div>
+    
+    <div class="lokasi-item">
+      <img src="https://file.fin.co.id/uploads/f/f88c3b854e48c5957fa32db01eff3662.jpg" alt="Lumpia Mbak Lien">
+      <h3>Lumpia Mbak Lien</h3>
+      <p>Alamat: Jl. Pemuda, Gg. Grajen No.1, Pandansari, Semarang Tengah.</p>
+      <p>Keistimewaan: Ukuran besar, isian padat, tempat nyaman.</p>
+      <a href="https://maps.app.goo.gl/pef7Ekh6NepYU2SZ6" class="map-link" target="_blank">Lihat di Google Maps</a>
+    </div>
+    
+    <p style="text-align: center; margin-top: 20px; font-style: italic; font-size:0.9em;">Catatan: Jam buka dapat berubah. Cek info terbaru sebelum berkunjung.</p>
+  </div>
 
-    <nav>
-        <a href="index.html">Beranda</a>
-        <a href="sejarah.html">Sejarah</a>
-        <a href="resep.html">Resep</a>
-        <a href="lokasi.html" class="aktif">Lokasi</a>
-        <a href="galeri.html">Galeri</a>
-    </nav>
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="sejarah.html">Sejarah</a>
+    <a href="resep.html">Resep</a>
+    <a href="lokasi.html" class="aktif">Lokasi</a>
+    <a href="galeri.html">Galeri</a>
+  </nav>
 
 </body>
 </html>
