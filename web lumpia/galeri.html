@@ -4,123 +4,295 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Galeri Foto Lumpia Semarang - Kelezatan Khas Kota Atlas</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        .konten-utama {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            color: #4A90E2;
-        }
-        p.centered-text {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-            color: #555;
-        }
-        nav {
-            margin: 20px 0;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #4A90E2;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #D0021B;
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-        .gallery-item {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            text-align: left;
-            cursor: pointer;
-            transition: transform 0.3s;
-        }
-        .gallery-item:hover {
-            transform: scale(1.05);
-        }
-        .gallery-item img {
-            width: 100%;
-            display: block;
-        }
-        .caption {
-            padding: 10px 12px;
-            font-weight: 600;
-            font-size: 1rem;
-            color: #374151;
-        }
-        .caption-desc {
-            font-weight: normal;
-            font-size: 0.9rem;
-            color: #6b7280;
-            margin-top: 4px;
-        }
-    </style>
-</head>
+    </head>
 <body>
+    <div class="container">
+        <div class="header">
+            <h1> Galeri Lumpia Semarang</h1>
+            <p>Jelajahi berbagai foto lumpia Semarang yang menggoda selera, mulai dari proses pembuatan hingga sajian akhir</p>
+        </div>
 
-    <div class="konten-utama">
-        <h1>Galeri Kenikmatan Lumpia Semarang</h1>
-        <p class="centered-text">Lihat berbagai foto lumpia Semarang yang menggugah selera, mulai dari proses pembuatan hingga sajian akhir.</p>
-        
-        
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Cari foto lumpia..." id="searchInput">
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">Semua</button>
+                <button class="filter-btn" data-category="tradisional">Tradisional</button>
+                <button class="filter-btn" data-category="modern">Modern</button>
+                <button class="filter-btn" data-category="proses">Proses</button>
+            </div>
+            
+            <div class="view-toggle">
+                <button class="view-btn active" data-view="grid">⊞ Grid</button>
+                <button class="view-btn" data-view="list">☰ List</button>
+            </div>
+        </div>
 
-        <div class="gallery">
-            <div class="gallery-item" tabindex="0">
-                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/647f850b-7a1e-437b-98ec-3864f469abe3.png" alt="Proses pembuatan lumpia Semarang dengan tepung dan isian segar di meja dapur tradisional" />
-                <div class="caption">Proses Pembuatan Lumpia</div>
-                <div class="caption-desc">Menggulung lumpia secara tradisional dengan bahan-bahan segar berkualitas.</div>
+        <div class="gallery grid-view" id="gallery">
+            <div class="gallery-item" data-category="tradisional">
+                <img src="" alt="">
+                <div class="content">
+                    <h3>Lumpia Isi Tradisional</h3>
+                    <p>Foto menunjukan tahap berbagai fase lumpia Semarang yang menggoda selera, mulai dari proses pembuatan hingga sajian akhir.</p>
+                    <div class="meta">
+                        <span class="category-tag">tradisional</span>
+                        <span>ID: 1</span>
+                    </div>
+                </div>
             </div>
-            <div class="gallery-item" tabindex="0">
-                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1ac62324-aafe-44c8-99c1-933d73b99f70.png" alt="Lumpia Semarang yang digoreng dengan kulit renyah warna keemasan di atas piring putih" />
-                <div class="caption">Lumpia Digoreng</div>
-                <div class="caption-desc">Lumpia dengan kulit renyah berwarna keemasan yang menggoda selera.</div>
+
+            <div class="gallery-item" data-category="modern">
+                <img src="" alt="">
+                <div class="content">
+                    <h3>Sajian Akhir Lumpia</h3>
+                    <p>Hasil lumpia Semarang siap santap dengan tara kuning dan hiasan yang menarik dan berguna sebagai tradisional dengan bahan-bahan segar berkualitas.</p>
+                    <div class="meta">
+                        <span class="category-tag">modern</span>
+                        <span>ID: 2</span>
+                    </div>
+                </div>
             </div>
-            <div class="gallery-item" tabindex="0">
-                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/607a41ec-93fc-4256-a44e-2cfbbf851835.png" alt="Sajian lumpia Semarang siap santap dengan saus kacang dan hiasan daun bawang di atas piring keramik" />
-                <div class="caption">Sajian Akhir Lumpia</div>
-                <div class="caption-desc">Lumpia siap disantap dengan pelengkap saus kacang khas Semarang.</div>
+
+            <div class="gallery-item" data-category="tradisional">
+                <img src="https://pesonanusantara.co.id/images/upload//l/o/loenpia_mbaklien_spesial_isi10_lumpiamatang.jpg" alt="Mbak Lien">
+                <div class="content">
+                    <h3>Loenpia Mbak Lien</h3>
+                    <p>Sajian lumpia dengan tekstur kulit yang renyah dengan tatakkan kerupuk yang menggoda selera.</p>
+                    <div class="meta">
+                        <span class="category-tag">tradisional</span>
+                        <span>ID: 3</span>
+                    </div>
+                </div>
             </div>
-            <div class="gallery-item" tabindex="0">
-                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/90364711-a864-4f0e-a5fa-57453cede4df.png" alt="Tumpukan lumpia Semarang kriuk renyah tersusun di dalam keranjang bambu" />
-                <div class="caption">Lumpia Kriuk</div>
-                <div class="caption-desc">Lumpia kriuk yang renyah dengan tekstur khas yang menggugah selera.</div>
+
+            <div class="gallery-item" data-category="modern">
+                <img src="" alt="">
+                <div class="content">
+                    <h3>Sajian Akhir Lumpia</h3>
+                    <p>Hasil lumpia Semarang siap santap dengan tara kuning dan hiasan yang menarik.</p>
+                    <div class="meta">
+                        <span class="category-tag">modern</span>
+                        <span>ID: 4</span>
+                    </div>
+                </div>
             </div>
-            <div class="gallery-item" tabindex="0">
-                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/80a54dcc-097d-46fa-9131-c18c8c2207d2.png" alt="Isian mie untuk lumpia Semarang disajikan dalam mangkuk dengan peralatan dapur tradisional" />
-                <div class="caption">Isian Mie Lumpia</div>
-                <div class="caption-desc">Isian mie yang menjadi ciri khas lumpia Semarang dengan cita rasa otentik.</div>
+
+            <div class="gallery-item" data-category="proses">
+                <img src="" alt="">
+                <div class="content">
+                    <h3>Lumpia yang renyah dengan tekstur khas yang menggoda selera</h3>
+                    <p>Irisan kekal yang renyah dengan tekstur khas yang menggoda selera.</p>
+                    <div class="meta">
+                        <span class="category-tag">proses</span>
+                        <span>ID: 5</span>
+                    </div>
+                </div>
             </div>
+
+            <div class="" data-category="">
+                <img src="" alt="">
+                <div class="content">
+                    <h3>Tahap awal lumpia</h3>
+                    <p>Tahap awal yang lumpia semarang dengan tata terpat uji dari lumpia semarang dengan cara operasi.</p>
+                    <div class="meta">
+                        <span class="category-tag">proses</span>
+                        <span>ID: 6</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="loading" id="loading" style="display: none;">Memuat galeri...</div>
+        <div class="no-results" id="noResults" style="display: none;">
+            Tidak ada foto yang ditemukan. Coba kata kunci lain.
         </div>
     </div>
 
-        <nav style="display: flex; justify-content: center;">
+    
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <button class="nav-btn prev">❮</button>
+        <button class="nav-btn next">❯</button>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="">
+        </div>
+    </div>
+
+    <script>
+        
+        const gallery = document.getElementById('gallery');
+        const loading = document.getElementById('loading');
+        const noResults = document.getElementById('noResults');
+        const searchInput = document.getElementById('searchInput');
+        const modal = document.getElementById('imageModal');
+        const modalImage = document.getElementById('modalImage');
+        const closeBtn = document.querySelector('.close');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+
+        
+        const allGalleryItems = Array.from(gallery.querySelectorAll('.gallery-item'));
+        
+    
+        const galleryData = allGalleryItems.map((item, index) => {
+            const img = item.querySelector('img');
+            const title = item.querySelector('h3').textContent;
+            const description = item.querySelector('p').textContent;
+            const category = item.getAttribute('data-category');
+            
+            return {
+                id: index + 1,
+                src: img.src,
+                title: title,
+                description: description,
+                category: category,
+                tags: title.toLowerCase().split(' ').concat(description.toLowerCase().split(' ')),
+                element: item
+            };
+        });
+
+        let currentImages = [...galleryData];
+        let currentImageIndex = 0;
+
+        
+        function initGallery() {
+            
+            allGalleryItems.forEach((item, index) => {
+                const img = item.querySelector('img');
+                img.style.cursor = 'pointer';
+                img.addEventListener('click', () => openModal(index + 1));
+                
+                
+                item.style.animationDelay = `${index * 0.1}s`;
+            });
+            
+            loading.style.display = 'none';
+        }
+
+    
+        function filterGallery(images) {
+            allGalleryItems.forEach(item => {
+                item.style.display = 'none';
+            });
+            
+            if (images.length === 0) {
+                noResults.style.display = 'block';
+                return;
+            }
+            
+            noResults.style.display = 'none';
+            
+            images.forEach(item => {
+                if (item.element) {
+                    item.element.style.display = 'block';
+                }
+            });
+        }
+
+        
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            const filteredImages = currentImages.filter(item => 
+                item.title.toLowerCase().includes(searchTerm) ||
+                item.description.toLowerCase().includes(searchTerm) ||
+                item.tags.some(tag => tag.toLowerCase().includes(searchTerm))
+            );
+            filterGallery(filteredImages);
+        });
+
+        
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+                
+                const category = e.target.dataset.category;
+                if (category === 'all') {
+                    currentImages = [...galleryData];
+                } else {
+                    currentImages = galleryData.filter(item => item.category === category);
+                }
+                
+                searchInput.value = '';
+                filterGallery(currentImages);
+            });
+        });
+
+        
+        document.querySelectorAll('.view-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+                
+                const view = e.target.dataset.view;
+                gallery.className = `gallery ${view}-view`;
+            });
+        });
+
+        
+        function openModal(imageId) {
+            const image = galleryData.find(item => item.id === imageId);
+            currentImageIndex = galleryData.findIndex(item => item.id === imageId);
+            
+            modalImage.src = image.src;
+            modalImage.alt = image.title;
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        function showNextImage() {
+            currentImageIndex = (currentImageIndex + 1) % galleryData.length;
+            const nextImage = galleryData[currentImageIndex];
+            modalImage.src = nextImage.src;
+            modalImage.alt = nextImage.title;
+        }
+
+        function showPrevImage() {
+            currentImageIndex = (currentImageIndex - 1 + galleryData.length) % galleryData.length;
+            const prevImage = galleryData[currentImageIndex];
+            modalImage.src = prevImage.src;
+            modalImage.alt = prevImage.title;
+        }
+
+        
+        closeBtn.addEventListener('click', closeModal);
+        nextBtn.addEventListener('click', showNextImage);
+        prevBtn.addEventListener('click', showPrevImage);
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        
+        document.addEventListener('keydown', (e) => {
+            if (modal.style.display === 'block') {
+                if (e.key === 'Escape') closeModal();
+                if (e.key === 'ArrowLeft') showPrevImage();
+                if (e.key === 'ArrowRight') showNextImage();
+            }
+        });
+
+        
+        initGallery();
+    </script>
+
+
+
+ <nav style="display: flex; justify-content: center;">
             <nav style="display: flex; gap: 20px; font-size: 1; font-weight: bold; color: #4A90E2;">
                 <a href="index.html">Beranda</a>
                 <a href="sejarah.html">Sejarah</a>
                 <a href="resep.html">Resep</a>
                 <a href="lokasi.html">Lokasi</a>
                 <a href="galeri.html" class="aktif">Galeri</a>
+
         
 </body>
 </html>
