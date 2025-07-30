@@ -587,3 +587,76 @@ nav {
         font-size: 14px;
       }
     }
+
+       body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8f0;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    .konten-utama {
+      max-width: 800px;
+      margin: 60px auto 40px auto;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .konten-utama h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 32px;
+      color: #d35400;
+    }
+
+    .konten-utama img {
+      display: block;
+      margin: 30px auto 0 auto;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    nav {
+      background-color: #e67e22;
+      padding: 12px 0;
+      text-align: center;
+      position: sticky;
+      bottom: 0;
+      width: 100%;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 18px;
+      display: inline-block;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #d35400;
+    }
+
+    nav a.aktif {
+      background-color: #b03e00;
+      border-radius: 6px;
+    }
+
+    @media (max-width: 600px) {
+      .konten-utama {
+        margin: 20px;
+        padding: 20px;
+      }
+
+      nav a {
+        padding: 10px 12px;
+        font-size: 14px;
+      }
+    }
