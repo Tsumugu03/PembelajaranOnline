@@ -487,5 +487,32 @@ body {
         height: 200px;
     }
 }
+nav {
+      background-color: #e67e22;
+      padding: 12px 0;
+      text-align: center;
+      position: sticky;
+      bottom: 0;
+      width: 100%;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 18px;
+      display: inline-block;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #d35400;
+    }
+
+    nav a.aktif {
+      background-color: #b03e00;
+      border-radius: 6px;
+    }
 
 
